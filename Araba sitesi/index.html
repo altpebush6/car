@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PTG | Araba Alış-Satış</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/913cc5242f.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+      $("#toggle").click(function(){
+        $("#gizlimenu").toggle(1000);
+      })
+    });
+        function eng_degis(){
+          document.getElementById("tr").style.border= "0px solid black"
+          document.getElementById("tr").style.marginBottom= "1px"
+          document.getElementById("eng").style.border= "1px solid white"
+          document.getElementById("dil_sec").style.marginRight= "54px";
+          document.getElementById("home").innerHTML="Home";
+          document.getElementById("about").innerHTML="About";
+          document.getElementById("contact").innerHTML="Contact";
+          document.getElementById("purchase").innerHTML="Purchase";
+          document.getElementById("h4baslik").innerHTML="Buy the Best Car for You";
+          document.getElementById("view").innerHTML="View";
+          document.getElementById("rcz").innerHTML="Version Name YEARLING Engine Type Gasoline Gear Type Manual Frame Type Coupe Engine Volume 1.6Segment S Segment Fuel Consumption 6.9 lt / 100km Power 147 KwTork 275 Traction Front Wheel Drive Weight 1297 Kg Load capacity 1780 Kg Final Speed ​​237 km / h0-100 Acceleration value 7.5 secCO2 emission value 159 g / km";
+          document.getElementById("bmw").innerHTML="The BMW i8 Coupé and BMW i8 Roadster, the pioneer of progressive design, sustainable and dynamic driving pleasure, have completed the production process. The BMW i8, BMW's first plug-in hybrid model, made its way into the company's history as the world's most successful electric sports car. Let's explore this inspiring story together.";
+          document.getElementById("audi").innerHTML="Energetic with all her looks. A visibly stronger expression thanks to the optional 3D design Audi Matrix LED headlights with characteristic horizontal and vertical elements. The front is slightly raised and has future-oriented, progressive lines that continue its appearance in one piece towards the bonnet. Headlights consisting of independent light diodes that detect oncoming traffic and offer the best ambient lighting under all conditions. The Audi TT Coupe is one of the most progressive sports cars of our time.";
+          document.getElementById("range").innerHTML="With its sportier design features and powerful, muscular stance, Range Rover Sport is designed to make an impact. From the Range Rover Sport grille and redesigned bonnet vents to the plain yet sporty wheel options, it is simpler, more dynamic and more dynamic wherever you look.";
+          document.getElementById("contacttous").innerHTML="Contact to Us";
+          document.getElementById("contactinfo").innerHTML="Phone number:0(544)-693-3345 <br> E-mail:ebubekiralatepe2@gmail.com <br> Instagram:@altpebush";
+          document.getElementById("about2").innerHTML="About";
+          document.getElementById("aboutinfo").innerHTML="I am Ebu. I am working on web programming. This is one of the sample sites I have created. I hope you will like it.";
+          document.getElementById("products").innerHTML="Products";
+          document.getElementById("menuanasayfa").innerHTML="Home";
+          document.getElementById("menuhakkımızda").innerHTML="About";
+          document.getElementById("menuiletisim").innerHTML="Contact";
+          document.getElementById("menusatinal").innerHTML="Purchase";
+          if (device-width<"1068px") {
+            document.getElementById("dil_sec").style.marginLeft= "300px";
+          }
+        }
+        function tr_degis(){
+          document.getElementById("eng").style.border= "1px solid white"
+          window.location.reload(false)
+        }
+    </script>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <div class="navbar">
+    <a href="#" class="ptglogo">  <img src="resimler/ptglogo.png" alt="" height="70"></a>
+    <a href="#" class="ptglogobeyaz">  <img src="resimler/ptglogobeyaz.png" alt="" height="70"></a>
+    <div class="dil_sec" id="dil_sec">
+      <img src="resimler/tr.jpg" alt="" height="20" onclick="tr_degis()" class="tr" id="tr">
+      <img src="resimler/eng.png" alt="" height="19" onclick="eng_degis()" class="eng" id="eng">
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#" id="home">Anasayfa</a></li>
+        <li><a href="#" id="about">Hakkımızda</a></li>
+        <li><a href="#" id="contact">İletişim</a></li>
+        <li><a href="#" id="purchase">Satın Al</a></li>
+      </ul>
+
+    </div>
+    <i class="fas fa-bars" id="toggle"></i>
+    </div>
+    <!--GİZLİ MENU-->
+    <div class="gizlimenu" id="gizlimenu">
+      <ul>
+        <li><a href="#" id="menuanasayfa">Anasayfa</a><hr></li>
+        <li><a href="#" id="menuhakkımızda">Hakkımızda</a><hr></li>
+        <li><a href="#" id="menuiletisim">İletişim</a><hr></li>
+        <li><a href="#" id="menusatinal">Satın al</a></li>
+      </ul>
+    </div>
+    <!--Resim-->
+    <div class="resim">
+      <div class="h4etiket">
+        <h4 id="h4baslik">Size En Uygun Arabayı Satın Alın</h4>
+      </div>
+      <div class="aetiket">
+        <a href="#" id="view">İncele</a>
+      </div>
+    </div>
+    <!--İçerik alanı-->
+    <div class="orta_alan">
+      <div class="orta">
+        <div class="icerik">
+          <img src="resimler/rcz.jpg" alt="">
+          <h2>Peugeot RCZ</h2>
+          <p id="rcz">Versiyon Adı	YEARLING Motor Tipi	BenzinVites Tipi	ManuelKasa Tipi
+            	CoupeMotor Hacmi	1.6Segment	S SegmentiYakıt Tüketimi	6.9 lt / 100km Güç	147 KwTork	275Çekiş	Önden ÇekişAğırlık	1297 KgYük kapasitesi	1780 KgSon Sürat	237 km/s0-100 hızlanma değeri	7.5 snCO2 emisyon değeri	159 g/km</p>
+        </div>
+      </div>
+      <div class="orta">
+        <div class="icerik">
+          <img src="resimler/bmw.jpg" alt="">
+          <h2>BMW i8</h2>
+          <p id="bmw">İlerici tasarımın, sürdürülebilir ve dinamik sürüş keyfinin öncüsü olan BMW i8 Coupé ve BMW i8 Roadster, üretim sürecini tamamladı. BMW’nin ilk plug-in hybrid modeli olan BMW i8, dünyanın en başarılı elektrikli spor otomobili olarak şirket tarihine geçti. Bu ilham verici öyküyü birlikte keşfedelim.</p>
+        </div>
+      </div>
+      <div class="orta">
+        <div class="icerik">
+          <img src="resimler/audi.jpg" alt="">
+          <h2>Audi TT</h2>
+          <p id="audi">Tüm görünüşü ile enerjik. Karakteristik yatay ve dikey elemanları ile opsiyonel olarak sunulan 3D
+tasarıma sahip Audi Matrix LED farlar sayesinde gözle görünür şekilde daha güçlü bir ifade. Ön
+kısmı hafif havaya kalkık ve tek parça olarak görünümünü motor kaputuna doğru devam ettiren
+geleceğe ait, ilerici çizgilere sahip. Karşıdan gelen trafiği algılayan ve her şart altında en iyi ortam
+aydınlatması sunan bağımsız ışık diyotlarından oluşan ön farlar. Audi TT Coupe, çağımızın en
+ ilerici spor otomobillerinden biri.</p>
+        </div>
+      </div>
+      <div class="orta">
+        <div class="icerik">
+          <img src="resimler/range.jpg" alt="">
+          <h2>Range Rover</h2>
+          <p id="range">Daha sportif tasarım özellikleri ve güçlü, kaslı duruşuyla Range Rover Sport etki yaratmak üzere tasarlandı. Range Rover Sport ızgaradan ve yeniden tasarlanan motor kapağı havalandırmalarından sade olduğu kadar sportif jant seçeneklerine kadar baktığınız her yerde daha sade, daha dinamik ve daha modern bir his sunar.</p>
+        </div>
+      </div>
+      </div>
+      <!--Footer alanı-->
+      <div class="footer">
+        <div class="footerlogo">
+          <img src="resimler/ptglogobeyaz.png" alt="" height="100">
+          <h3>Pain To Gain</h3>
+        </div>
+        <div class="footericerik">
+          <h3 id="contacttous">Bize Ulaşın</h3>
+          <p id="contactinfo">
+          Telefon Numarası:0(544)-693-3345 <br>
+          E-mail:ebubekiralatepe2@gmail.com <br>
+          Instagram:@altpebush</p>
+        </div>
+        <div class="footericerik">
+          <h3 id="about2">Hakkımızda</h3>
+          <p id="aboutinfo">Ben Ebu. Web programlaması üzerinde çalışıyorum. Bu da oluşturduğum örnek sitelerden biri. Umarım Beğenirsiniz.</p>
+        </div>
+        <div class="footericerik urunler">
+          <h3 id="products">Ürünler</h3>
+          <p>Audi <br> Peugeot <br> BMW <br> Range Rover <br> Fiat <br> Porsche <br> Lamborghini </p>
+        </div>
+        <div class="footericerik sosyal">
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+      </div>
+
+  </body>
+</html>
